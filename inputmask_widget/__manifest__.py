@@ -3,7 +3,7 @@
     'name': "Inputmask Widget",
 
     'summary': """
-    Mask for Field""",
+   A Widget to make masks on form fields""",
 
     'description': """
 ================
@@ -23,17 +23,17 @@ Instructions:
 
    Some examples::
 
-    <field widget="mask" data-inputmask="'alias': 'date'" />
-    <field widget="mask" data-inputmask="'mask': '99/99/9999'" />
-    <field widget="mask" data-inputmask="'mask': '99-aa-**-AA-&amp;&amp;-##'" />
-    <field widget="mask" data-inputmask="'mask': '9', 'repeat': 10, 'greedy' : false" />
+    <field widget="mask" data-inputmask="'alias': 'date'" name="name" />
+    <field widget="mask" data-inputmask="'mask': '99/99/9999'" name="name" />
+    <field widget="mask" data-inputmask="'mask': '99-aa-**-AA-&amp;&amp;-##'" name="name" />
+    <field widget="mask" data-inputmask="'mask': '9', 'repeat': 10, 'greedy' : false" name="name" />
 
    Or::
 
-     <field widget="mask" data-inputmask-alias="date" />
+     <field widget="mask" data-inputmask-alias="date" name="name" />
      <field widget="mask" data-inputmask-mask="99/99/9999" />
-     <field widget="mask" data-inputmask-mask="99-aa-**-AA-&amp;&amp;-##" />
-     <field widget="mask" data-inputmask-mask="9" data-inputmask-repeat="10" data-inputmask-greedy="false"/>
+     <field widget="mask" data-inputmask-mask="99-aa-**-AA-&amp;&amp;-##" name="name" />
+     <field widget="mask" data-inputmask-mask="9" data-inputmask-repeat="10" data-inputmask-greedy="false" name="name" />
 
 - Just add attribute *widget="mask_regex"* and *data-inputmask[-regex]="<value>"* to **<field />**
 
@@ -41,7 +41,7 @@ Instructions:
 
    Example email validation::
 
-    <field widget="mask_regex" data-inputmask-regex="[a-zA-Z0-9._%-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}" />
+    <field widget="mask_regex" data-inputmask-regex="[a-zA-Z0-9._%-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}" name="name"/>
 
 Masking definition:
 
@@ -66,7 +66,7 @@ Aliases:
 """,
 
     'author': "Gilvan Leal",
-    'website': "https://github.com/gilvanleal/inputmask_widget",
+    'website': "https://gilvanleal.github.io/odoowidgets/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
@@ -79,6 +79,5 @@ Aliases:
 
     # always loaded
     "data": ['views/assets_templates.xml'],
-    "qweb": ['static/src/xml/mask.xml'],
-    # only loaded in demonstration mode
+    "qweb": ['static/src/xml/mask.xml']
 }
