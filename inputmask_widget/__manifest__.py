@@ -94,5 +94,6 @@ Instructions:
 
     # always loaded
     "data": ['views/assets_templates.xml'],
-    "qweb": ['static/src/xml/mask.xml']
+    "qweb": ['static/src/xml/mask.xml'],
+    'images': ['static/description/main_screenshot.png']
 }
