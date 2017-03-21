@@ -19,7 +19,7 @@ Based on jquery.inputmask 3.x `Docs in GitHub
 Instructions:
 -------------
 
-- Just add attribute *widget="mask"* and *data-inputmask[-<attribute>]="<value>"* to **<field />**
+- Just add attribute *widget="mask"* and *data-inputmask[-<attribute>]="<value>"* to **<field />** on form, tree and kanban
 
    Some examples::
 
@@ -87,7 +87,7 @@ Instructions:
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
     'category': 'Extra Tools',
-    'version': '0.2',
+    'version': '1.0',
 
     # any module necessary for this one to work correctly
     'depends': ['web'],

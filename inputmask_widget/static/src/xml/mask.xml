@@ -17,4 +17,7 @@
                t-att="widget.attributes"
         />
     </t>
+    <span t-name="Widget.mask"
+          t-att="widget.attributes"
+          contenteditable="true"/>
 </templates> 
