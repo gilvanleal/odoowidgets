@@ -34,10 +34,12 @@ odoo.define('web.ckeditor_widget', function (require) {
         render_value: function () {
             this._super();
             var show_value = formats.format_value(this.get_value(), this, '');
-            this.$editor = this.$el.ckeditor().editor;
+
             if (this.$input != undefined) {
+                this.$editor = this.$input.ckeditor().editor;
                 this.$input.val(show_value);
             }else {
+                this.$editor = this.$el.ckeditor().editor;
                 this.$editor.setData(show_value);
             }
         },
@@ -76,7 +78,7 @@ odoo.define('web.ckeditor_widget', function (require) {
             });
         },
         destroy_content: function() {
-            //this.$editor.destroy();
+            this.$editor.destroy();
             this.$input = undefined;
             this.$editor = undefined;
         },
