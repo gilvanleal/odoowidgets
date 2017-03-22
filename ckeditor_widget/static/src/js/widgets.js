@@ -34,8 +34,6 @@ odoo.define('web.ckeditor_widget', function (require) {
         render_value: function () {
             this._super();
             var show_value = formats.format_value(this.get_value(), this, '');
-            console.log(CKEDITOR.instances);
-
             this.$editor = this.$el.ckeditor().editor;
             if (this.$input != undefined) {
                 this.$input.val(show_value);
