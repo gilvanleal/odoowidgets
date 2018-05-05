@@ -1,1 +1,1 @@
-# odoowidgets
+# Odoo widgets
