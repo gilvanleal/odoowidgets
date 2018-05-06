@@ -43,15 +43,15 @@ Instructions:
    With the regex extension you can use any regular expression as a mask. Currently this does only input restriction. There is no further masking visualization.
 
    Example email validation::
-
+    
     <field widget="regex_mask" data-inputmask-regex="[a-zA-Z0-9._%-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}" name="name"/>
 
 - Widgets names use:
 
-   :mask: Char Field
-   :integer_mask: Integer Field
-   :float_mask: Float Field
-   :regex_mask: Char Field
+   :mask: CharField Only
+   :integer_mask: IntegerField in development...
+   :float_mask: FloatField in development...
+   :regex_mask: CharField Only
    :monetary_mask: in development...
 
 - Masking definition:
@@ -95,14 +95,14 @@ Instructions:
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
     'category': 'Extra Tools',
-    'version': '2.1',
+    'version': '2.5',
     'license': 'AGPL-3',
 
     # any module necessary for this one to work correctly
     'depends': ['web'],
 
     # always loaded
-    "data": ['views/assets_templates.xml'],
+    "data": ['views/inputmask_templates.xml'],
     "qweb": ['static/src/xml/mask.xml'],
     'images': ['static/description/main_screenshot.png']
 }
