@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates id="template" xml:space="preserve">
     <t t-name="FieldMask">
-        <span t-if="widget.get('effective_readonly')"
-              t-att-contenteditable="widget.node.attrs.contenteditable"
-              t-att="'contenteditable' in widget.attrsMask ? widget.attrsMask: undefined"/>
+        <span t-if="widget.mode === 'readonly'"
+              t-att="('contenteditable' in widget.attrsMask) ? widget.attrsMask: undefined"/>
 
-        <input t-if="!widget.get('effective_readonly')" class="o_form_input"
-               t-att-barcode_events="widget.options.barcode_events"
+        <input t-if="widget.mode !== 'readonly'"
                type="text"
                t-att-id="widget.id_for_label"
-               t-att-tabindex="widget.node.attrs.tabindex"
-               t-att-autofocus="widget.node.attrs.autofocus"
-               t-att-placeholder="widget.node.attrs.placeholder"
-               t-att-autocomplete="widget.node.attrs.autocomplete"
+               t-att-tabindex="widget.attrs.tabindex"
+               t-att-autofocus="widget.attrs.autofocus"
+               t-att-placeholder="widget.attrs.placeholder"
+               t-att-autocomplete="widget.attrs.autocomplete"
                t-att-maxlength="widget.field.size"
                t-att="widget.attrsMask"
         />
     </t>
-    <span t-name="Widget.mask"
-          t-att="widget.attrsMask"
-          contenteditable="false"/>
+    <!--<span t-name="Widget.mask"-->
+          <!--t-att="widget.attrsMask"-->
+          <!--contenteditable="false"/>-->
 </templates> 

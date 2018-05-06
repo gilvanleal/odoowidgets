@@ -113,7 +113,6 @@ odoo.define('web.inputmask_widgets', function (require) {
         .add('float_mask', FieldFloatMask)
         .add('mask_regex', FieldRegexMask) //@ Deprecated latest version FOR name conversion!
         .add('regex_mask', FieldRegexMask);
-    core.form_widget_registry.add('mask_regex', FieldRegexMask);
     list_widget_registry.add('field.mask', ColumnMask);
     kanban_widgets.registry.add("mask", MaskWidget);
 
