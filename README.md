@@ -1,3 +1,3 @@
 # Odoo widgets
 
-Inputmask Widget for Odoo
+- Inputmask Widget for Odoo
