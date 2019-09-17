@@ -1,4 +1,4 @@
-odoo.define('web.inputmask_widgets', function (require) {
+odoo.define('web.inputmask_widget', function (require) {
     "use strict";
     var core = require('web.core');
     var translation = require('web.translation');
