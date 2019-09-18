@@ -1,11 +1,10 @@
 odoo.define('inputmask_widget.registry', function (require) {
-    "use strict";
+"use strict";
 
-    var registry = require('web.field_registry');
-    var inputmask = require('inputmask_widget.fields');
+var registry = require('web.field_registry');
+var inputMask = require('inputmask_widget.fields');
 
-    registry
-        .add('mask', inputmask.FieldMask)
-        .add('regex_mask', inputmask.FieldRegexMask);
-
+registry
+    .add('mask', inputMask.FieldMask)
+    .add('regex_mask', inputMask.FieldRegexMask);
 });
