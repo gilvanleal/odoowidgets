@@ -8,5 +8,10 @@
                 <script type="text/javascript" src="/inputmask_widget/static/src/js/registry.js"/>
             </xpath>
         </template>
+        <template id="qunit_suite" name="inputmask_tests" inherit_id="web.qunit_suite">
+        <xpath expr="//t[@t-set='head']" position="inside">
+            <script type="text/javascript" src="/inputmask_widget/static/tests/inputmask_widget_tests.js"/>
+        </xpath>
+    </template>
     </data>
 </odoo>
